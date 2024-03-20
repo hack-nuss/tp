@@ -305,14 +305,9 @@ extern "C" asm void __dt__10cCcD_GSttsFv() {
 #pragma pop
 
 /* 80D66100-80D6611C 000780 001C+00 1/1 0/0 0/0 .text            setCoC__11daTagYami_cF4cXyz */
-#pragma push
-#pragma optimization_level 0
-#pragma optimizewithasm off
-asm void daTagYami_c::setCoC(cXyz param_0) {
-    nofralloc
-#include "asm/rel/d/a/tag/d_a_tag_yami/d_a_tag_yami/setCoC__11daTagYami_cF4cXyz.s"
+void daTagYami_c::setCoC(cXyz param_0) {
+    mCoC = param_0;
 }
-#pragma pop
 
 /* 80D6611C-80D66178 00079C 005C+00 1/0 0/0 0/0 .text            __dt__10dCcD_GSttsFv */
 #pragma push
